@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("stargif.gif");
+    background-repeat: repeat;
+    color: white;
+    font-family: 'Averia Gruesa Libre', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #5590B2, 0 0 20px #5590B2, 0 0 25px #5590B2, 0 0 30px #5590B2, 0 0 35px #5590B2;
+    /* overflow: hidden; */
+    background: conic-gradient(
+    #ffadad 51deg,
+    #ffd6a5 51deg 102deg, 
+    #fdffb6 102deg 153deg,
+    #caffbf 153deg 204deg,
+    #9bf6ff 204deg 255deg,
+    #a0c4ff 255deg 306deg,
+    #bdb2ff 306deg
+    );
+
+    animation: animateOne linear 15s infinite;
+}
+
+@keyframes animateOne {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
